@@ -52,7 +52,7 @@ export default function PriceDetails() {
         <GoQuestion size={20} color="black" />
       </Flex>
       <Box border="2px dotted" borderColor="gray.300"></Box>
-      <Flex alignItems="flex-start" justifyContent="space-between">
+      <Flex justifyContent="space-between" align="flex-start">
         <Flex minW="235px" justifyContent={"space-between"}>
           <Flex>
             <Text textStyle="lg" fontWeight="bold" color="black">
@@ -73,7 +73,12 @@ export default function PriceDetails() {
               36
             </Text>
           </Flex>
-          <Text fontSize="12.5px" color="gray.600">
+          <Text
+            position="relative"
+            top="2px"
+            fontSize="12.5px"
+            color="gray.600"
+          >
             List Price{" "}
             <Text as="span" textDecoration="line-through">
               AED 89.32
@@ -81,6 +86,8 @@ export default function PriceDetails() {
           </Text>
         </Flex>
         <Text
+          position="relative"
+          top="2px"
           borderRadius="xl"
           backgroundColor="red.100"
           py="1px"
