@@ -123,7 +123,7 @@ const Detail = ({ label, value }: DetailProps) => (
     py={3}
   >
     <Text fontSize="md" color="gray.600" w="180px">{label}</Text>
-    <Box fontWeight="bold" color="black">
+    <Box fontWeight="bold" color="black" w="200px">
       {value}
     </Box>
   </HStack>
