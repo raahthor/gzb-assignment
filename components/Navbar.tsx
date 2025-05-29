@@ -1,4 +1,4 @@
-import { Button, Link, Flex, Icon, Text } from "@chakra-ui/react";
+import { Button, Link, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";

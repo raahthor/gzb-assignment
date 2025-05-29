@@ -1,4 +1,4 @@
-import { Box, Center, Input, InputElement, InputGroup } from "@chakra-ui/react";
+import { Box, Center, Input, InputGroup } from "@chakra-ui/react";
 import { FaMicrophone } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 

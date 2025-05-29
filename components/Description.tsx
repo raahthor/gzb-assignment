@@ -1,6 +1,5 @@
 import { Box, Flex, HStack, Link, Tabs, VStack, Text } from "@chakra-ui/react";
-import React, { JSX } from "react";
-import { LuUser, LuFolder, LuSquareCheck } from "react-icons/lu";
+import React, { JSX } from "react"; 
 
 export default function Description() {
   return (

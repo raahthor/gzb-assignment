@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import {  Flex, Text } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 import { BiSolidOffer } from "react-icons/bi";
 import { IoDiamondOutline } from "react-icons/io5";
