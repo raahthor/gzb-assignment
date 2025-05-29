@@ -8,11 +8,11 @@ export default function PopularBooks() {
   return (
     <Flex direction="column" my="14">
       <Flex justifyContent="space-between" alignItems="center">
-        <Box h="1px" border="1px dotted" w="43%" borderColor="gray.300"></Box>
+        <Box h="1px" border="1px dotted" w="40%" borderColor="gray.300"></Box>
         <Text letterSpacing="widest" fontSize="md" color="gray.600">
           POPULAR BOOKS
         </Text>
-        <Box h="1px" border="1px dotted" w="43%" borderColor="gray.300"></Box>
+        <Box h="1px" border="1px dotted" w="40%" borderColor="gray.300"></Box>
       </Flex>
       <Center color="black" fontWeight="bold" fontSize="3rem">
         Enjoy Up to 80% Off
@@ -126,7 +126,7 @@ function Carousel() {
                 fontSize="xs"
                 fontWeight="bold"
               >
-                AEd323 fd
+                AED 167.00
               </Text>
               <Text fontWeight="bold" color="red.500" fontSize="lg">
                 59% OFF

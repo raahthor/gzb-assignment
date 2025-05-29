@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Link,
-  RatingGroup,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Link, RatingGroup, Text } from "@chakra-ui/react";
 import { CiBookmark } from "react-icons/ci";
 import { FaClock, FaTruck } from "react-icons/fa";
 import { FaCircleExclamation } from "react-icons/fa6";
@@ -27,7 +20,13 @@ export default function PriceDetails() {
             Jack Mayer
           </Link>
         </Text>
-        <Button w="80px" h="28px" backgroundColor="blue.200" borderRadius="xl" _hover={{bgColor:"blue.300"}}>
+        <Button
+          w="80px"
+          h="28px"
+          backgroundColor="blue.200"
+          borderRadius="xl"
+          _hover={{ bgColor: "blue.300" }}
+        >
           <CiBookmark /> <Text mr="4px">Save</Text>
         </Button>
       </Flex>
@@ -54,31 +53,33 @@ export default function PriceDetails() {
       </Flex>
       <Box border="2px dotted" borderColor="gray.300"></Box>
       <Flex alignItems="flex-start" justifyContent="space-between">
-        <Flex>
-          <Text textStyle="lg" fontWeight="bold" color="black">
-            AED
-          </Text>
-          <Text
-            as="span"
-            textStyle="4xl"
-            px="4px"
-            color="black"
-            fontWeight="bold"
-            position="relative"
-            top="-5px"
-          >
-            53
-          </Text>
-          <Text textStyle="lg" fontWeight="bold" color="black">
-            36
+        <Flex minW="235px" justifyContent={"space-between"}>
+          <Flex>
+            <Text textStyle="lg" fontWeight="bold" color="black">
+              AED
+            </Text>
+            <Text
+              as="span"
+              textStyle="4xl"
+              px="4px"
+              color="black"
+              fontWeight="bold"
+              position="relative"
+              top="-5px"
+            >
+              53
+            </Text>
+            <Text textStyle="lg" fontWeight="bold" color="black">
+              36
+            </Text>
+          </Flex>
+          <Text fontSize="12.5px" color="gray.600">
+            List Price{" "}
+            <Text as="span" textDecoration="line-through">
+              AED 89.32
+            </Text>
           </Text>
         </Flex>
-        <Text position="relative" right="20px" fontSize="sm" color="gray.600">
-          List Price{" "}
-          <Text as="span" textDecoration="line-through">
-            AED 89.32
-          </Text>
-        </Text>
         <Text
           borderRadius="xl"
           backgroundColor="red.100"
