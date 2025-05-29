@@ -38,7 +38,7 @@ export default function BookInfo() {
               justifyContent="center"
               alignItems={"center"}
             >
-              <Icon size={25} color="gray" />
+              <Icon size={25} color="dimgray" />
               <Text color="gray.700" fontSize="xs">
                 {item.info}
               </Text>

@@ -13,7 +13,7 @@ export default function BookDetail() {
         <Flex p="5px" w="35%">
           <Box w="430px" h="590px" position="relative" overflow="hidden">
             <Image
-              src="/bookcovers/main.png"
+              src="/bookCovers/main.png"
               alt="book cover 5"
               fill
               style={{ objectFit: "cover" }}
