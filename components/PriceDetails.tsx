@@ -27,7 +27,7 @@ export default function PriceDetails() {
             Jack Mayer
           </Link>
         </Text>
-        <Button w="80px" h="28px" backgroundColor="blue.200" borderRadius="xl">
+        <Button w="80px" h="28px" backgroundColor="blue.200" borderRadius="xl" _hover={{bgColor:"blue.300"}}>
           <CiBookmark /> <Text mr="4px">Save</Text>
         </Button>
       </Flex>

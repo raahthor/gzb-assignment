@@ -13,6 +13,9 @@ export default function RadioButton() {
       p="15px"
       alignItems="center"
       gap="20px"
+      cursor="pointer"
+      onClick={() => setChecked(!checked)}
+      _hover={{ bgColor: "orange.200" }}
     >
       <Box
         w="20px"
@@ -22,8 +25,6 @@ export default function RadioButton() {
         border="4px solid"
         borderColor="white"
         bg={checked ? "blue.400" : "transparent"}
-        cursor="pointer"
-        onClick={() => setChecked(!checked)}
       />
       <Image src="/turbo.png" height={20} width={70} alt="My Icon" />
       <Text color="gray.900">Free Delivery</Text>

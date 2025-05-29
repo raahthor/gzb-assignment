@@ -5,7 +5,7 @@ import { LuUser, LuFolder, LuSquareCheck } from "react-icons/lu";
 export default function Description() {
   return (
     <>
-      <Tabs.Root defaultValue="members" mb="16" px="16">
+      <Tabs.Root defaultValue="members" mb="8" px="28">
         <Tabs.List borderBottom="1px solid" borderColor="gray.200">
           <Tabs.Trigger
             mr="10"
@@ -45,12 +45,12 @@ export default function Description() {
           </Tabs.Trigger>
         </Tabs.List>
       </Tabs.Root>
-      <Flex direction={{ base: "column", md: "row" }} gap={10}>
-        <Box flex="2">
-          <Text fontSize="xl" fontWeight="bold" mb={4}>
+      <Flex gap={10} px="24">
+        <Flex direction="column" width="50%">
+          <Text fontSize="2xl" color="black" fontWeight="bold" mb={4}>
             Book Description
           </Text>
-          <VStack align="start" gap={3} fontSize="sm" color="gray.700">
+          <VStack align="start" gap={5} color="gray.700">
             <Text>
               From the bestselling author of <em>Never Let Me Go</em> and{" "}
               <em>The Remains of the Day</em>, a stunning new novel that asks,
@@ -72,14 +72,13 @@ export default function Description() {
               love?
             </Text>
           </VStack>
-        </Box>
+        </Flex>
 
-        {/* Product Details */}
-        <Box flex="1" fontSize="sm">
-          <Text fontSize="xl" fontWeight="bold" mb={4}>
+        <Flex direction="column" fontSize="sm" width="50%">
+          <Text fontSize="2xl" color="black" fontWeight="bold" mb={4}>
             Product Details
           </Text>
-          <VStack align="stretch" gap={3}>
+          <VStack align="stretch" gap={0}>
             <Detail label="Print Length" value="160 Pages" />
             <Detail label="Language" value="English" />
             <Detail label="Publisher" value="Grove Press Black Cat" />
@@ -104,11 +103,12 @@ export default function Description() {
             <Detail label="Genre" value="Literary Fiction, Science Fiction" />
             <Detail label="Weight" value="0.65 lbs (294 g)" />
             <Detail
+
               label="Dimensions"
-              value="5.2 × 0.8 × 8 inches (13.2 × 2 × 20.3 cm)"
+              value="5.2 x 0.8 x 8 inches (13.2 x 2 x 20.3 cm)"
             />
           </VStack>
-        </Box>
+        </Flex>
       </Flex>
     </>
   );
@@ -117,16 +117,14 @@ type DetailProps = {
   label: string;
   value: string | JSX.Element;
 };
-
 const Detail = ({ label, value }: DetailProps) => (
   <HStack
-    justify="space-between"
     borderBottom="1px solid"
-    borderColor="gray.100"
-    py={1}
+    borderColor="gray.300"
+    py={3}
   >
-    <Text color="gray.500">{label}</Text>
-    <Box fontWeight="semibold" textAlign="right">
+    <Text fontSize="md" color="gray.600" w="180px">{label}</Text>
+    <Box fontWeight="bold" color="black">
       {value}
     </Box>
   </HStack>
