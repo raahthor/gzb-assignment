@@ -16,7 +16,17 @@ import { RiMastercardLine } from "react-icons/ri";
 export default function Footer() {
   return (
     <>
-      <Flex px="24" pb="24" pt="12rem" gap={"10"}>
+      <Flex
+        px="24"
+        pb="24"
+        pt="12rem"
+        gap={"10"}
+        justifyContent="space-evenly"
+        bgImage="url('/bgImage.svg')"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        bgPos="center 85%"
+      >
         <Flex p="10" bgColor={"yellow.300"} gap={"8"} align="center">
           <Box p="4" w="16" h="16" bgColor="blue.900" borderRadius="full">
             <IoMdMail size={30} />
@@ -28,7 +38,7 @@ export default function Footer() {
             <Text my="3" color={"gray.600"}>
               Sign up for our newsletter for great deals and business insights.
             </Text>
-            <Button bgColor={"yellow.400"} borderRadius={"full"} px="6">
+            <Button bgColor={"yellow.500"} borderRadius={"full"} px="6">
               Newsletter Sign Up
             </Button>
           </Box>
@@ -45,7 +55,7 @@ export default function Footer() {
             <Text my="3" color={"gray.600"}>
               Get in touch with the team at ShopLocal RI for assistance.
             </Text>
-            <Button bgColor={"yellow.400"} borderRadius={"full"} px="6">
+            <Button bgColor={"yellow.500"} borderRadius={"full"} px="6">
               Contact Us
             </Button>
           </Box>
@@ -94,7 +104,7 @@ export default function Footer() {
             <LiaCcDiscover size={35} />
           </Link>
           <Link href="#">
-            <RiMastercardLine  size={35} />
+            <RiMastercardLine size={35} />
           </Link>
           <Link href="#">
             <FaApplePay size={35} />

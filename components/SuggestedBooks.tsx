@@ -17,10 +17,11 @@ export default function SuggestedBooks() {
           h="80px"
           position="relative"
           overflow="hidden"
-          border="1px solid"
-          borderColor="gray.300"
           borderRadius="md"
-          _hover={{ borderColor: "blue.400" }}
+          _hover={{
+            border: "3px solid",
+            borderColor: "blue.400",
+          }}
           cursor="pointer"
         >
           <Image
